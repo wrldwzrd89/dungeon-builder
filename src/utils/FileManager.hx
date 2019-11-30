@@ -17,14 +17,13 @@ class FileManager
 	//******************************************************************************************
 	// Singleton stuff
 	//******************************************************************************************
-	private static var _instance:FileManager;
-	public static var instance(get_instance, null):FileManager;
+	private static var instance:FileManager;
 	private static function get_instance():FileManager {
-		if (_instance == null) {
-			_instance = new FileManager();
-			_instance.init();
+		if (instance == null) {
+			instance = new FileManager();
+			instance.init();
 		}
-		return _instance;
+		return instance;
 	}
 	
 	private function new()

@@ -23,14 +23,13 @@ class DungeonManager
 	//******************************************************************************************
 	// Singleton stuff
 	//******************************************************************************************
-	private static var _instance:DungeonManager;
-	public static var instance(get_instance, null):DungeonManager;
+	private static var instance:DungeonManager;
 	private static function get_instance():DungeonManager {
-		if (_instance == null) {
-			_instance = new DungeonManager();
-			_instance.init();
+		if (instance == null) {
+			instance = new DungeonManager();
+			instance.init();
 		}
-		return _instance;
+		return instance;
 	}
 	
 	private function new()

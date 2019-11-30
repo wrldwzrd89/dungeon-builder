@@ -17,7 +17,6 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
-    <class path="C:\HaxeToolkit\haxe\lib\haxeui\1,3,0\styles" />
     <class path="bin\flash\haxe" />
   </classpaths>
   <!-- Build options -->
@@ -34,7 +33,8 @@
     <library name="openfl" />
     <library name="actuate" />
     <library name="hscript" />
-    <library name="haxeui" />
+    <library name="haxeui-core" />
+    <library name="haxeui-openfl" />
   </haxelib>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>

@@ -154,8 +154,7 @@ class EDCDungeonGenerator //EvenlyDistributedCells EDCDungeon
 		while (true)
 		{
 			// get all neighbor cells not connected
-			var unconnectedList:List<Cell> = Lambda.filter(getNeighborCells(current), function (x) return !x.connected);
-			var unconnected:Array<Cell> = Lambda.array(unconnectedList);
+			var unconnected:Array<Cell> = Lambda.filter(getNeighborCells(current), function (x) return !x.connected);
 			if (unconnected.length == 0) {
 				break;
 			}
@@ -177,7 +176,7 @@ class EDCDungeonGenerator //EvenlyDistributedCells EDCDungeon
 			var candidates:Array<Dynamic> = [];
 			for (cell in Lambda.filter(cells.values(), function (x) return x.connected))
 			{
-				var neighbors:List<Cell> = Lambda.filter(getNeighborCells(cell), function (x) return !x.connected);
+				var neighbors:Array<Cell> = Lambda.filter(getNeighborCells(cell), function (x) return !x.connected);
 				if (neighbors.length == 0) {
 					continue;
 				}
